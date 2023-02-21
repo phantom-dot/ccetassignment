@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap');
+.routes{
+    display: none;
+}
+
+.main-nav{
+    position:static;
+}
 .logo{
     min-height: 50px;
     min-width: 50px;
     max-height:70px;
     max-width: 70px;
+    object-fit: fill;
     
 }
 .logo img{
@@ -15,7 +22,7 @@
 .nav-routes-link{
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .nav-routes-link li{
     font-family:'Roboto Mono';
@@ -30,11 +37,12 @@
 .outer-nav{
     padding-top:10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 .nav-buttons button{
     
+    display:inline;
     background-color: black;
     height:50px;
     width:170px;
@@ -46,4 +54,12 @@
 .nav-buttons button a{
     color: #FFE6CD;
     text-decoration: none;
+}
+@media screen and (max-width:833px) {
+        .nav-buttons button{
+                display: none;
+        }
+        .outer-nav{
+            justify-content: center;
+        }
 }

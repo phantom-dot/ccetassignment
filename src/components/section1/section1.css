@@ -1,0 +1,103 @@
+.Outer-div {
+    background-image: url(../../media/site-back2.png);
+    background-position: center;
+}
+
+.inner-div {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.ccet-brand {
+    font-size: 83px;
+    font-family: Garet-Book;
+    color: #FFE6CD;
+    line-height: 0.4;
+}
+
+.Assignments {
+    font-weight: 400;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 70px;
+    color: #FFE6CD;
+}
+
+.image-div {
+    margin-top: 20px;
+    width: 45%;
+}
+
+.image-div img {
+    width: 100%;
+}
+
+.made-by {
+    font-family: 'Roboto Mono';
+    color: #FFE6CD;
+}
+
+button {
+
+    background-color: #FFE6CD;
+    height: 50px;
+    width: 70%;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-family: 'Roboto Mono';
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1103px) {
+    .ccet-brand {
+        line-height: 1;
+    }
+
+    .inner-div {
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+
+@media screen and (max-width:610px) {
+   .text-div{
+    padding: 20px;
+   }
+   .image-div {
+    width: unset;
+}
+
+    .ccet-brand {
+        font-size: 50px;
+        
+    }
+
+    .Assignments {
+        
+        font-size: 30px;
+        
+    }
+}
+
+@media screen and (max-width:241px) {
+    
+    .ccet-brand{
+        font-size: 40px;
+    }
+    .Assignments {
+            
+        font-size: 20px;
+        
+    }
+    
+    }
