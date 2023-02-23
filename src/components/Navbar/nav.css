@@ -8,13 +8,11 @@
     min-width: 50px;
     max-height:70px;
     max-width: 70px;
-    object-fit: fill;
     
 }
-.logo img{
-    height:100%;
-    width:100%;
 
+.logo img{
+    width:100%;
 }
 
 .nav-routes-link{
