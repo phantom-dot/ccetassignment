@@ -3,3 +3,9 @@
     background-color: #FFE6CD;
     font-family: 'Roboto Mono';
 }
+
+@media screen and (max-width:390px) {
+    .main-div{
+        font-size: x-small;
+    }
+}
