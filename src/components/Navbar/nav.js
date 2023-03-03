@@ -23,8 +23,7 @@ export default function nav() {
           </div>
 
           <div className='nav-buttons'>
-            <button><NavLink to="/register">REGISTER NOW</NavLink></button>
-            <button><NavLink to="/sign-in">SIGN IN</NavLink></button>
+            <button><NavLink to="/register">Contribute Now</NavLink></button>
           </div>
 
         </div>

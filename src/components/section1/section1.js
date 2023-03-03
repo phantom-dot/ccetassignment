@@ -1,6 +1,11 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import heroimg from '../../media/heroimg.webp'
+import { FiArrowRight } from "react-icons/fi";
+
+
+
+
 import './/section1.css'
 export default function section1() {
     return (
@@ -12,8 +17,14 @@ export default function section1() {
                     <div className='text-div'>
                         <p><span className='ccet-brand' >ccet</span> <br />
                             <span className='Assignments'>ASSIGNMENTS</span><br /><br />
-                            <span className='made-by'>A website for ccet students Made with ❤️ By seniors</span> <br /></p>
-                        <button><NavLink to="/register">Explore study Resources ✍️</NavLink></button>
+                            <span className='made-by'>For all your academic needs 😎</span>
+                        </p>
+                        <ul className='branches'>
+                        <li><FiArrowRight/><NavLink to="/Computer">Computer Science</NavLink></li>
+                            <li><NavLink to="/Electronics">Electronics</NavLink></li>
+                            <li><NavLink to="/civil">Civil</NavLink></li>
+                            <li><NavLink to="/Mech">Mechanical</NavLink></li>
+                        </ul>
                     </div>
 
 

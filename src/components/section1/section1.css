@@ -4,7 +4,6 @@
 }
 
 .inner-div {
-    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -21,7 +20,6 @@
 
 .Assignments {
     font-weight: 400;
-
     font-family: 'Space Mono', monospace;
     font-size: 70px;
     color: #FFE6CD;
@@ -37,24 +35,36 @@
 }
 
 .made-by {
-    font-family: 'Roboto Mono';
+    font-family: 'Garet-Book';
     color: #FFE6CD;
 }
 
-button {
+.branches li a{
+    color: #FFE6CD;
+    text-decoration: none;
+}
 
-    background-color: #FFE6CD;
+.branches li{
+    list-style:disc;
+    font-family: 'Roboto Mono', cursive;
+    font-size: 20px;
+    padding: 10px;
+    list-style: none;
+}
+
+/* button {
+
+    background-color: black;
     height: 50px;
     width: 70%;
     margin-top: 20px;
-    border-radius: 25px;
     font-family: 'Roboto Mono';
-}
+} */
 
-button a {
-    color: black;
+/* button a {
+    color: wheat;
     text-decoration: none;
-}
+} */
 
 @media screen and (max-width:1103px) {
     .ccet-brand {

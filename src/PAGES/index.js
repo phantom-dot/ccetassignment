@@ -8,6 +8,7 @@ const Home = () => {
     <div className='sec1'>
       <Section1></Section1>
       <Section2></Section2>
+      
     </div>
     </>
   );

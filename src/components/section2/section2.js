@@ -7,7 +7,7 @@ export default function section2() {
 
             <div className='what_to_expect'>
 
-                <div>What to Expect</div>
+                <div>What to<br /><span>Expect</span></div>
 
                 <div className='think_emoji_div'>
                     <img src={emoji} alt="" />

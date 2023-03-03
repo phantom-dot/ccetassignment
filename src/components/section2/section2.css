@@ -1,22 +1,44 @@
-.what_to_expect{
+.what_to_expect {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
+    justify-content: space-around;
+
 }
-.what_to_expect div{
+
+.what_to_expect div {
     font-family: 'Roboto Mono';
-    font-size: 50px;
+    font-size: 60px;
+    line-height: 55px;
 }
 
-.main-div{
+.ideas_list li {
+    color: #FF8345;
+    font-size: 30px;
+    font-family: 'Roboto Mono';
+    list-style: none;
+    padding: 25px;
+}
+
+.ideas_list li span {
+    color: black;
+    font-size: 22px;
+
+}
+
+.main-div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: #FFE6CD;
+
 }
 
-.think_emoji_div{
-    width: 50%;
+.think_emoji_div {
+    margin-top: 10px;
+    width: 40%;
 }
-.think_emoji_div img{
+
+.think_emoji_div img {
     width: 100%;
 }
-
