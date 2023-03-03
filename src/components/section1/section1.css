@@ -52,19 +52,20 @@
     list-style: none;
 }
 
-/* button {
+div button {
 
     background-color: black;
     height: 50px;
     width: 70%;
     margin-top: 20px;
     font-family: 'Roboto Mono';
-} */
+    border-radius: 20px;
+} 
 
-/* button a {
+ div button a {
     color: wheat;
     text-decoration: none;
-} */
+} 
 
 @media screen and (max-width:1103px) {
     .ccet-brand {
