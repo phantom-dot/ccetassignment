@@ -11,15 +11,41 @@ export default function branches() {
    <>
     <div className='branches-main-div'>
         <div className='branches'>
-            <div>
-            <NavLink to="/"><img src={civil} alt="logo" /><h3>Civil</h3></NavLink>
-            </div>
-            <div> <NavLink to="/"><img src={mech} alt="logo" /><h3>Mechanical</h3></NavLink></div>
-            <div> <NavLink to="/"><img src={cse} alt="logo" /><h3>Computer Science</h3></NavLink></div>
-            <div> <NavLink to="/"><img src={elec} alt="logo" /><h3>Electrical</h3></NavLink></div>
-        </div>
+          <div className='card' >
+          <div className='box' id='civil'>
+          <div className = 'content'>
+          <a href='civil.html'>Civil</a>
 
-    </div>
+          </div>
+          </div>
+          </div>
+          <div className='card' >
+          <div class="box" id='ece'>
+          <div class = "content">
+            <a href='ece.html'>ECE</a>
+            
+          </div>
+          </div>
+          </div>
+          <div className='card' >
+          <div class="box" id='mech'>
+          <div class = "content">
+          <a href='mech.html'>Mech</a>
+
+          </div>
+          </div>
+          </div>
+          <div className='card' >
+          <div class="box" id='cse'>
+          <div class = "content">
+          <a href='cse.html'>CSE</a>
+
+          </div>
+          </div>
+          </div>
+            
+            </div>
+        </div>
    </>
   )
 }
