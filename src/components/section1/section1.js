@@ -2,16 +2,26 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import heroimg from '../../media/heroimg.webp'
 import './/section1.css'
+import Typewriter from 'typewriter-effect';
 export default function section1() {
     return (
         <>
+
             <div className='Outer-div'>
 
                 <div className='inner-div'>
 
                     <div className='text-div'>
                         <p><span className='ccet-brand' >ccet</span> <br />
-                            <span className='Assignments'>ASSIGNMENTS</span><br /><br />
+                            {/* <span className='Assignments'>ASSIGNMENTS</span><br /><br /> */}
+                            <span className='Assignments'>   <Typewriter
+                                options={{
+                                    strings: ['ASSIGNMENTS','Practical Files','PYQ','Student clubs'],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            /></span>
+
                             <span className='made-by'>For all your academic needs 😎</span>
                         </p>
                         <div>

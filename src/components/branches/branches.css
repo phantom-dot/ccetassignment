@@ -1,10 +1,21 @@
 .branches{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
+.branches div{
+    max-width:400px;
+    padding: 10px;
+}
 .branches div img{
+    width:100%;
     border-radius: 20px;
 }
+.branches div a{
+   text-decoration: none;
+   color: black;
+   font-family: 'Roboto Mono';
+}
+
