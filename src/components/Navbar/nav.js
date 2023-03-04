@@ -11,7 +11,7 @@ export default function nav() {
         <div className='outer-nav'>
 
           <div className='logo'>
-            <img src={ccetlogo} alt="logo" />
+          <NavLink to="/"><img src={ccetlogo} alt="logo" /></NavLink>
           </div>
 
           <div className='routes'>

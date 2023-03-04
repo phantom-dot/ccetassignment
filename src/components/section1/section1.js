@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import heroimg from '../../media/heroimg.webp'
-import { FiArrowRight } from "react-icons/fi";
 // import { GiElectric } from "react-icons/gi";
 // import { RiComputerFill } from "react-icons/ri";
 // import { FaBuilding } from "react-icons/fa";
