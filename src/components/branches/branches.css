@@ -1,0 +1,10 @@
+.branches{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.branches div img{
+    border-radius: 20px;
+}

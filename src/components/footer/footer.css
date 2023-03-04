@@ -2,6 +2,9 @@
     color:black;
     background-color: #FFE6CD;
     font-family: 'Roboto Mono';
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width:390px) {
