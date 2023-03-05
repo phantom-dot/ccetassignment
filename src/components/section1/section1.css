@@ -1,6 +1,13 @@
 .Outer-div {
-    background-image: linear-gradient(90deg , orange , red );
-    background-position: center;
+/* background: hsla(50, 68%, 93%, 1); */
+
+background: linear-gradient(318deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsl(288deg 21% 31%) 100%);
+
+/* background: -moz-linear-gradient(90deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsla(288, 55%, 55%, 1) 100%); */
+
+/* background: -webkit-linear-gradient(90deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsla(288, 55%, 55%, 1) 100%); */
+
+/* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9F5E0", endColorstr="#F5895C", GradientType=1 ); */
 }
 
 .inner-div {
@@ -8,7 +15,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
 }
 .text-div{
     max-width: 50%;
@@ -41,24 +47,16 @@
     color: #FFE6CD;
 }
 
-.branches li a{
-    color: #FFE6CD;
-    text-decoration: none;
-}
-
-.branches li{
-    list-style:disc;
-    font-family: 'Roboto Mono', cursive;
-    font-size: 20px;
-    padding: 10px;
-    list-style: none;
+.arrow-2{
+    width: 50px;
+    height: 50px;
 }
 
 div button {
 
     height: 50px;
     width: 100%;
-    margin-top: 20px;
+    background-color: white;
     font-family: 'Roboto Mono';
     border: none;
     border-radius: 20px;
@@ -68,6 +66,11 @@ div button {
     color: black;
     text-decoration: none;
 }
+
+/* .arrow-container{
+    margin-left: 50%;
+    margin-right:50%;
+} */
 
 
 @media screen and (max-width:1103px) {
