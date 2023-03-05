@@ -64,7 +64,7 @@
 
 }
 
-/* #civil{
+#civil{
   background-image: url(../../media/civil.png);
 }
 #ece{
@@ -75,7 +75,7 @@
 }
 #cse{
   background-image: url(../../media/computer.png);
-} */
+}
 
 .branches-main-div .branches .card .box{
 
