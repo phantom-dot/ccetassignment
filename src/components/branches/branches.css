@@ -121,7 +121,7 @@
 
 .branches-main-div .branches .card .box .content a:hover{
   box-shadow: 0 10px 20px rgb(0 0 0 / 60%);
-    background-color: lightblue;
+    background-color: black;
     /* background: #caf0f8; */
     color: white;
 }
