@@ -13,11 +13,12 @@ background: linear-gradient(318deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%,
 .inner-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .text-div{
-    max-width: 50%;
+    width: 45%;
+    
 }
 .ccet-brand {
     font-size: 83px;
@@ -47,15 +48,11 @@ background: linear-gradient(318deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%,
     color: #FFE6CD;
 }
 
-.arrow-2{
-    width: 50px;
-    height: 50px;
-}
 
 div button {
 
     height: 50px;
-    width: 100%;
+    width: 70%;
     background-color: white;
     font-family: 'Roboto Mono';
     border: none;
@@ -88,7 +85,7 @@ div button {
 
 @media screen and (max-width:610px) {
    .text-div{
-    padding: 20px;
+    width: fit-content
    }
    .image-div {
     width: unset;

@@ -4,7 +4,7 @@ import About from "./PAGES/about";
 import Register from "./PAGES/register";
 import Signin from "./PAGES/signin";
 import Contact from "./PAGES/contact";
-import Dashboard from "./PAGES/dashboard";
+import CSE from "./PAGES/CSE";
 
 function App() {
   return (
@@ -15,8 +15,9 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/sign-in" element={<Signin />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/CSE" element={<CSE />} />
       </Routes>
+      
     </Router>
   );
 }

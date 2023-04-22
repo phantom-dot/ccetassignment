@@ -7,19 +7,19 @@
   background-color: #f8f8f8;
   transition: left 0.3s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+
 }
 
 .sidebar.open {
   left: 0;
 }
-
-.sidebar button {
-  margin: 10px;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  background-color: #0077cc;
-  color: #fff;
+.close-menu {
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
   cursor: pointer;
 }
 

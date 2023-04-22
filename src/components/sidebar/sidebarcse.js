@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
+import { CgMenuRight } from "react-icons/cg";
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const subjects = [
@@ -24,15 +25,18 @@ const Sidebar = () => {
   };
 
   return (
+    <>
+    <div className="close-menu" onClick={toggleSidebar}><CgMenuRight /></div>
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
-      <button onClick={toggleSidebar}>Toggle Sidebar</button>
-      <h2>Computer Science Subjects</h2>
+    <h2>Computer Science Subjects</h2>
       <ul>
         {subjects.map((subject, index) => (
           <li key={index}>{subject}</li>
         ))}
       </ul>
     </div>
+    
+    </>
   );
 };
 
