@@ -3,10 +3,6 @@ import { NavLink } from "react-router-dom";
 import ccetlogo from '../../media/LOGO.png'
 import './/nav.css'
 
-const hammenu = () => {
-  const isopen[]
-
-}
 
 
 export default function nav() {
