@@ -3,20 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 @font-face {
-  font-family: Garet-Book;
-  src: url(./fonts/Garet-Book.otf);
+  font-family: Raleway;
+  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 }
 @font-face {
   font-family: speed;
   src: url(./fonts/NoizeSportFreeVertionRegular-MVwye.ttf);
 }
 
+
+
 .container{
   padding: 20px;
 }
 
+
+
 body{
+
+  background-color: #82c7ef4a;
   margin:0%;
   padding: 0%;
+  
   
 }
