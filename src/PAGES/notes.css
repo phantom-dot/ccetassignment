@@ -1,0 +1,39 @@
+.noteItem{
+    padding-left: 8px;
+    margin-bottom: 1.5em;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+
+    box-sizing: border-box;
+
+    display: block;
+
+    font-size: 1em;
+    font-weight: normal;
+
+    font-family: "Noto Serif vedabaseio", "Noto Serif", serif;
+
+    line-height: 1.8em;
+
+    color: #1d1601;
+    text-align: left;
+
+    
+}
+
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+
+    box-sizing: border-box;
+
+    font-size: 1em;
+
+    padding: 50px;
+}
