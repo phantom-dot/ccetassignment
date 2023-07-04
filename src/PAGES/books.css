@@ -1,0 +1,58 @@
+.book-item{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 2em;
+    line-height: 1.5em;
+
+    text-align: center !important;
+
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+
+    font-size: 1em;
+
+    font-family: "Noto Serif vedabaseio", "Noto Serif", serif;
+
+    display: block;
+   
+}
+
+.book-cover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+}
+
+.book-title{
+
+    display: block;
+    text-align: center;
+    color: #1d1601;
+    margin-top: 1em;
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    touch-action: manipulation;
+
+    text-decoration: none;
+    background-color: transparent;
+
+    
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.library{
+    padding: 50px;
+}
