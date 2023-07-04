@@ -1,117 +1,125 @@
-.Outer-div {
-/* background: hsla(50, 68%, 93%, 1); */
-
-background: linear-gradient(318deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsl(288deg 21% 31%) 100%);
-
-/* background: -moz-linear-gradient(90deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsla(288, 55%, 55%, 1) 100%); */
-
-/* background: -webkit-linear-gradient(90deg, hsla(50, 68%, 93%, 1) 0%, hsla(18, 88%, 66%, 1) 50%, hsla(288, 55%, 55%, 1) 100%); */
-
-/* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9F5E0", endColorstr="#F5895C", GradientType=1 ); */
+.cloud {
+   /* center content */
+   /* position: relative; */
+   padding: 50px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   /* grid */
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   gap: 5px;
 }
 
-.inner-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.text-div{
-    width: 45%;
+
+
+.cloud{
+    
+    grid-template:
+    '  . . . Information Documentation Documentation Documentation Documentation'
+    '  Computer Computer Computer Information Engineering Debugging Learning Exams'
+    '  . Notes Software Information Engineering Debugging Learning Design     '
+    '  . . Software Information Programming Debugging Learning Design'
+    '  . . Software Information Assignments Debugging Learning Design'
+    '  . . . Information . . Learning .';
+
+    
     
 }
-.ccet-brand {
-    font-size: 83px;
-    font-family: Garet-Book;
-    color: #FFE6CD;
-    line-height: 0.4;
+
+/* base font color for all words */
+.cloud > div {
+    color:black;
+    font-size: 40px;
+    text-shadow: 3px 5px 8px rgba(1, 1, 1, 0.3);
 }
 
-.Assignments {
-    font-weight: 400;
-    font-family: 'Space Mono', monospace;
-    font-size: 60px;
-    color: #FFE6CD;
-}
-
-.image-div {
-    margin-top: 20px;
-    width: 45%;
-}
-
-.image-div img {
-    width: 100%;
-}
-
-.made-by {
-    font-family: 'Garet-Book';
-    color: #FFE6CD;
-}
-
-
-div button {
-
-    height: 50px;
-    width: 70%;
-    background-color: white;
-    font-family: 'Roboto Mono';
-    border: none;
-    border-radius: 20px;
-} 
-
- div button a {
+.cloud:hover{
     color: black;
+    background-color:#0090c1;
+    /* Firefox */
+    -moz-transition: all 10s ease-in;
+    /* WebKit */
+    -webkit-transition: all 10s ease-in;
+    /* Opera */
+    -o-transition: all 10s ease-in;
+    /* Standard */
+    transition: all 10s ease-in;
+}
+
+
+/* twice the size, bold and different color for each second word */
+ .cloud :nth-child(2n) {
+    font-size: 2rem;
+    color: #38aecc;
+    font-weight: bold;
+    
+}
+/* vertical orientation and different color for each third word */
+ .cloud :nth-child(3n) {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    color: #0090c1; 
+    font-size: 3rem;
+}
+/* triple size and different color for each fourth word */
+.cloud :nth-child(4n) {
+    font-size: 3rem;
+    color: #183446;
+}
+/* quadruple size and different color for each fifth word */
+ .cloud :nth-child(5n) {
+    font-size: 4rem;
+    color: #046e8f;
+    
+}
+
+
+a{
     text-decoration: none;
+    color: inherit;
 }
 
-/* .arrow-container{
-    margin-left: 50%;
-    margin-right:50%;
+
+
+
+#Engineering{
+    font-size: 7rem;
+}
+
+
+ @media only screen and (max-width: 1500px) {
+    .cloud {
+        display: none;
+        
+    }
+} 
+/*
+
+#Documentation{
+    font-size:2rem ;
+}
+#Algorithm{
+    font-size: 4rem;
+}
+#Robotics{
+    font-size: 2rem;
+    padding-left: -20px;
+}
+#mechanics{
+    font-size: 2rem;
+}
+#Pressure{
+    font-size: 6rem;
+}
+#Design{
+    font-size: 2rem;
 } */
-
-
-@media screen and (max-width:1103px) {
-    .ccet-brand {
-        line-height: 1;
-    }
-
-    .inner-div {
-        flex-direction: column;
-    }
-
-
-}
-
-
-@media screen and (max-width:610px) {
-   .text-div{
-    width: fit-content
-   }
-   .image-div {
-    width: unset;
-}
-
-    .ccet-brand {
-        font-size: 50px;
-        
-    }
-
-    .Assignments {
-        
-        font-size: 30px;
-        
-    }
-}
-
-@media screen and (max-width:241px) {
-    
-    .ccet-brand{
-        font-size: 40px;
-    }
-    .Assignments {
-            
-        font-size: 20px;
-        
-    }
-    
-    }
+/* #Engineering{
+    font-size:5rem ;
+    color: darkslategray;
+    font: bold;
+    writing-mode:initial;
+} */
