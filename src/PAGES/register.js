@@ -5,8 +5,6 @@ export default function register() {
     <div className='container'>
       <h1 >Registration page</h1>
       yes you will be able to sign up and sign in👌
-    </div>
-      
-        
+    </div>    
   )
 }
