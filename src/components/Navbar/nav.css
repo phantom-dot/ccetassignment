@@ -1,60 +1,42 @@
-
-.main-nav{
-    position:static;
-}
-.logo{
-    min-height: 50px;
-    min-width: 50px;
-    max-height:70px;
-    max-width: 70px;
+.me-auto{
+    padding-left: 50%;
+    gap: 2rem;
     
 }
 
-.logo img{
-    width:100%;
+.dropdown .dropdown-content{
+
+  
 }
 
-.nav-routes-link{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-}
-.nav-routes-link li{
-    font-family: 'Garet-Book';
-    margin-left:28px ;
-    padding: 10px;
-    
-}
-.nav-routes-link li a{
-    text-decoration: none;
-    color: black;
-}
-.outer-nav{
-    padding-top:10px;
-    display: flex;
-    justify-content: space-evenly;
+
+
+
+.tab:hover Nav.Link{
+    text-decoration: underline;
 
 }
-.nav-buttons button{
-    
-    display:inline;
-    background-color: black;
-    height:50px;
-    width:170px;
-    margin-left: 20px;
-    margin-top: 8px;
-    border-radius: 25px;
-    font-family:'Roboto Mono';
+
+.bg-body-tertiary{
+  
+  font-size: 20px;
+ 
 }
-.nav-buttons button a{
-    color: #FFE6CD;
-    text-decoration: none;
+
+
+#basic-navbar-nav{
+  border-radius: 0;
 }
-@media screen and (max-width:833px) {
-        .nav-buttons button{
-                display: none;
-        }
-        .outer-nav{
-            justify-content: center;
-        }
+
+
+.dropdown-content {
+
+    border: none;
+    display: block;
+  }
+
+.nav{
+  padding: 15px;
 }
+  
+
