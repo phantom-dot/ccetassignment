@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import { CgMenuRight } from "react-icons/cg";
+import { CgMenuLeft } from "react-icons/cg";
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const subjects = [
@@ -26,11 +26,11 @@ const Sidebar = () => {
 
   return (
     <>
-    <div className="close-menu" onClick={toggleSidebar}><CgMenuRight /></div>
+    <div className="close-menu" onClick={toggleSidebar}><CgMenuLeft/></div>
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
     <h2>Computer Science Subjects</h2>
       <ul>
-        {subjects.map((subject, index) => (
+        {subjects.map((subject, index=0) => (
           <li key={index}>{subject}</li>
         ))}
       </ul>
