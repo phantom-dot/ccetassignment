@@ -1,15 +1,20 @@
-import React from "react";
-import Sidebar from "../components/sidebar/sidebarcse";
+
 import NavBar from "../components/Navbar/nav"
 import Footer from "../components/footer/footer"
+import React, { useEffect, useState } from "react";
 import "./books.css"
 
 
+
+
+
 function Book(props) {
+    
 
     const { img, title, alt, link } = props;
 
     return <div className="book-item">
+        
         <a href={link} title={title}>
 
 
@@ -22,23 +27,64 @@ function Book(props) {
         </a>
     </div>
 }
-const dashboard = () => {
+
+
+
+function Dashboard(props)  {
+
+    const [user, setUser] = useState([]);
+    
+
+   
+
+    const fetchData = async () => {
+        const response = await fetch("https://jnana-backend.onrender.com/api/books?populate=*")
+        const data = await response.json()
+        setUser(data.data)
+
+        console.log(Array.isArray(data.data)) ; 
+        // console.log(data) ; 
+        
+     
+        
+    }
+    
+    
+    useEffect(() => { 
+        fetchData();
+    }, []);
+    
+        
+
+
+
+
+    
+    
     return (
         <>
             <NavBar />
 
             <div className="container">
 
-
                 <div className="row" id="content" tabIndex="-1">
                     <div className="library">
-                        <h1>Library</h1>
+                        <h1>Library  </h1>
+                
                     </div>
 
 
+                    {user.map((item)=>{
+                        
+                     return  <Book img={item.attributes.Img.data.attributes.url}
+                        title={item.attributes.Subject} alt={item.attributes.Img.data.attributes.alternativeText}
+                        link={item.attributes.Link} key={item.id} />
+                     
+
+                    })} 
 
 
-                    <Book img="https://th.bing.com/th/id/OIP.M7KKYDGqTkdrGxx7GczFGQHaJx?pid=ImgDet&rs=1"
+                    {/* <Book img="https://th.bing.com/th/id/OIP.M7KKYDGqTkdrGxx7GczFGQHaJx?pid=ImgDet&rs=1"
                         title="Computer Networks" alt="Computer Networks"
                         link="https://drive.google.com/file/d/1nj7wYdRg38IyJdpr2VY3MHiBDLQrjsN-/view?usp=sharing" />
 
@@ -93,7 +139,7 @@ const dashboard = () => {
 
                     <Book img="https://covers.openlibrary.org/b/id/8078383-L.jpg"
                         title="Simulation Modeling and Analysis" alt="Modeling and Simulation"
-                        link="https://drive.google.com/file/d/1lj0bXalAiTgmfB6k08ABgSim-vGfkgkL/view?usp=sharing" />
+                        link="https://drive.google.com/file/d/1lj0bXalAiTgmfB6k08ABgSim-vGfkgkL/view?usp=sharing" /> */}
 
                    
                 </div>
@@ -104,7 +150,19 @@ const dashboard = () => {
 
             <Footer />
         </>
-    );
-};
+    )
 
-export default dashboard;
+                    }
+    
+    
+
+
+
+
+
+    
+
+          
+
+
+export default Dashboard;
