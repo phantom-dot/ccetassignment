@@ -18,28 +18,39 @@ function Notes(props) {
             {subject + "," + sem}
         </div>
     )
+
+
 }
 const dashboard = () => {
     return (
         <>
             <NavBar />
 
+<div className="container">
 
-            <div className="Notes">
-                <h1>Notes</h1>
+    <div className="row" id="content" tabIndex="-1">
+        <div className="notes">
+            <h1>Notes  </h1>
+    
+        </div>
+
+
+        {/* {user.map((item)=>{ */}
+            
+            <Notes title="Introduction to Computer Science" link="/" subject="CSE" sem="2nd" />
+
+         
+
+        {/* })} */}
+
+
+
             </div>
 
-            <div className="notes">
-
-                <Notes title="Introduction to Computer Science" link="/" subject="CSE" sem="2nd" />
-                <Notes title="Introduction to Computer Science" link="/" subject="CSE" sem="2nd" />
-                <Notes title="Introduction to Computer Science" link="/" subject="CSE" sem="2nd" />
-                <Notes title="Introduction to Computer Science" link="/" subject="CSE" sem="2nd" />
-                <Notes title="Introduction to Computer Science" link="/" subject="CSE" sem="2nd" />
-                <Notes title="Introduction to Computer Science" link="/" subject="CSE" sem="2nd" />
 
 
             </div>
+
             <Footer />
         </>
     );
