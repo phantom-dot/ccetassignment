@@ -2,13 +2,23 @@
     padding-left: 50%;
     gap: 2rem;
     
+    
 }
 
-.dropdown .dropdown-content{
-
-  
+.title{
+  font-size: 29px;
 }
 
+.title:hover{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 990px) {
+  .me-auto {
+    text-align: center;
+    padding-left: 0;
+  }
+}
 
 
 
