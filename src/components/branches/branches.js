@@ -1,66 +1,5 @@
-// import React from 'react'
+
 import './branches.css'
-// import { NavLink } from "react-router-dom";
-
-// // import Tilt from 'react-parallax-tilt';
-// // import civil from '../../media/civil.png';
-// // import mech from '../../media/mech.png';
-// // import cse from '../../media/computer.png';
-// // import elec from '../../media/elec.png';
-
-// export default function branches() {
-//   return (
-//     <> 
-//     <div className='branches-outer-div'>
-//       <div className='branches-inner-div'>
-//       {/* <div className='Title'>
-//       <h1>Branches</h1>
-//     </div> */}
-//         <div className='branches'>
-//           <NavLink to="/Civil"><div className='card' >
-//             <div className='box' id='civil'>
-//               <div className='content'>
-//                 <span>Civil</span>
-//               </div>
-//             </div>
-//           </div></NavLink>
-
-
-//           <NavLink to="/ECE"><div className='card' >
-//             <div className='box' id='ece'>
-//               <div className='content'>
-//                 <span>ECE</span>
-//               </div>
-//             </div>
-//           </div></NavLink>
-
-//           <NavLink to="/Mech"><div className='card' >
-//             <div className='box' id='mech'>
-//               <div className='content'>
-//                 <span>Mech</span>
-//               </div>
-//             </div>
-//           </div></NavLink>
-//           <NavLink to="/cse"><div className='card' >
-//             <div className='box' id='cse'>
-//               <div className='content'>
-//                 <span>Cse</span>
-//               </div>
-//             </div>
-//           </div></NavLink>
-
-//         </div>
-//       </div>
-//     </div> 
-  
-//     </>
-//   )
-// }
-
-
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 
 
 const BranchInfo = [
@@ -110,10 +49,15 @@ const Branch = (props)=>{
 function GridExample() {
   return (
     <section className='cardList'>
-   <Branch kk = {BranchInfo[3]} key={BranchInfo[3].id} />
-   <Branch kk = {BranchInfo[0]} key={BranchInfo[0].id}/>
+      {
+        BranchInfo.map((branch)=>{
+          return <Branch kk = {branch} key={branch.id} />
+            
+        })
+      }
+   {/* <Branch kk = {BranchInfo[0]} key={BranchInfo[0].id}/>
    <Branch kk = {BranchInfo[1]} key={BranchInfo[1].id}/>
-   <Branch kk = {BranchInfo[2]} key={BranchInfo[2].id}/>
+   <Branch kk = {BranchInfo[2]} key={BranchInfo[2].id}/> */}
     </section>
   );
 }
